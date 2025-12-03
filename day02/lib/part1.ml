@@ -47,7 +47,7 @@ let get_range_invalid_ids range =
     | None -> []
   else []
 
-let execute_part_one =
+let execute =
   get_input ()
   |> Option.iter (fun range_list ->
          let result =

@@ -5,15 +5,18 @@ let int_list_to_string list =
 
 let sum numbers = List.fold_left (fun acc num -> acc + num) 0 numbers
 
+let string_repeat pattern repeat =
+  List.init repeat (fun _ -> pattern) |> String.concat ""
+
 let range_to_string range =
   "Range [" ^ Int.to_string range.start ^ "," ^ Int.to_string range.stop ^ "]"
 
 let is_within_range range number =
-  let () =
-    print_endline
-      ("Checking if " ^ Int.to_string number ^ " belongs to "
-     ^ range_to_string range)
-  in
+  (* let () = *)
+  (*   print_endline *)
+  (*     ("Checking if " ^ Int.to_string number ^ " belongs to " *)
+  (*    ^ range_to_string range) *)
+  (* in *)
   number >= range.start && number <= range.stop
 
 let input file_path () =

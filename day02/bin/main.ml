@@ -1,3 +1,2 @@
-[@@@warning "-32"]
-
-let () = Day02.Part1.execute_part_one
+(* let () = Day02.Part1.execute *)
+let () = Day02.Part2.execute
